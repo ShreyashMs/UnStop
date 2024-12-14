@@ -25,23 +25,21 @@ body {
 }
 
 /* Image Section */
-/* Image Section */
 .img-container {
-  width: 100%; /* Make the container fully responsive */
-  max-width: 300px; /* Optional: Limits the maximum width of the container */
-  padding: 5%; /* Use percentage padding to make it responsive */
+  width: 100%; 
+  max-width: 300px; 
+  padding: 5%; 
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto; /* Let the height adjust based on the image */
+  height: auto; 
   overflow: hidden;
-  flex: 1; /* Ensures any overflow of the image is hidden */
-}
+  flex: 1;
 
 #illustration-img {
-  width: 100%; /* Ensures image takes full width of its parent */
-  height: 100%; /* Makes the image fill the container's height */
-  object-fit: contain; /* Ensures the image fits without distortion */
+  width: 100%;
+  height: 100%; 
+  object-fit: contain; 
 }
 
 /* Container for Layout */
@@ -51,11 +49,10 @@ body {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 100%; /* Ensure it takes up full width */
+  max-width: 100%; 
   margin: 0 auto;
   gap: 50px;
-  padding: 5% 2%; /* Percentage-based padding to ensure responsiveness */
-}
+  padding: 5% 2%; 
 
 /* Responsive Styles */
 @media (max-width: 700px) {
@@ -63,13 +60,13 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
-    padding: 5% 2%; /* Ensure padding remains responsive */
+    padding: 5% 2%; 
   }
 
   .img-container {
-    margin-bottom: 20px; /* Adjust margin for smaller screens */
-    width: 100%; /* Ensure image container is full width */
-    padding: 5%; /* Adjust padding to prevent overflow */
+    margin-bottom: 20px; 
+    width: 100%; 
+    padding: 5%; 
   }
 }
 
@@ -217,16 +214,16 @@ button#logoutButton:hover {
 }
 
 .social-login {
-  display: flex; /* Enables flexbox layout */
+  display: flex; 
   justify-content: space-between;
-  flex-direction: column; /* Stack buttons vertically */
-  align-items: center; /* Center the buttons horizontally */
+  flex-direction: column; 
+  align-items: center;
 }
 
 .social-login button {
-  display: flex; /* Makes the content inside button a flex container */
-  align-items: center; /* Aligns the icon and text in the center vertically */
-  justify-content: center; /* Ensures content is spaced evenly */
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
   padding: 10px 10px;
   border: 0.1px solid #e2e2e2;
   border-radius: 10px;
@@ -234,8 +231,8 @@ button#logoutButton:hover {
   cursor: pointer;
   font-size: 13px;
   font-weight: 500;
-  width: 100%; /* Ensures buttons fill the available width */
-  margin: 5px 0; /* Space between buttons vertically */
+  width: 100%; 
+  margin: 5px 0; 
   background: transparent;
 }
 
@@ -254,7 +251,7 @@ button#logoutButton:hover {
 .line-left,
 .line-right {
   border: 0;
-  border-top: 1px solid #bfbfbf; /* Change color as needed */
+  border-top: 1px solid #bfbfbf; 
   flex-grow: 1;
 }
 
@@ -268,28 +265,28 @@ button#logoutButton:hover {
 /* Container for Input with Icon */
 .input-container {
   position: relative;
-  border-radius: 10px; /* Rounded corners for the container */
-  display: flex; /* Flexbox for horizontal alignment */
+  border-radius: 10px; 
+  display: flex; 
   align-items: center;
-  background: rgb(234, 233, 233); /* Padding inside the container */
+  background: rgb(234, 233, 233); 
   padding: 5px;
 }
 
 /* Input Field */
 .input-container input {
-  width: 100%; /* Ensure input takes full width inside the container */
+  width: 100%;
   padding: 10px;
   font-size: 14px;
   font-weight: 700;
-  border: none; /* No border on the input itself */
-  outline: none; /* Remove the outline on focus */
-  background: transparent; /* Transparent background for the input */
+  border: none; 
+  outline: none;
+  background: transparent; 
 }
 
 /* Icon Inside the Input */
 .input-container .icon {
-  font-size: 18px; /* Icon size */
-  margin-right: 10px; /* Space between the icon and input text */
+  font-size: 18px; 
+  margin-right: 10px; 
 }
 
 .social-login .google {
