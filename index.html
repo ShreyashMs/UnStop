@@ -1,0 +1,98 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="img-container">
+        <img src="/assets/Illustration.png" alt="Logo" id="illustration-img" />
+      </div>
+      <div class="login-container">
+        <h3>
+          Welcome to <br />
+          <span>Unstop</span>
+        </h3>
+        <div class="social-login">
+          <button class="google">
+            <img src="/assets/google.png" alt="google icon" id="google-icon" />
+            Login with Google
+          </button>
+          <button class="facebook">
+            <img
+              src="/assets/facebook.png"
+              alt="facebook icon"
+              id="facebook-icon"
+            />
+            Login with Facebook
+          </button>
+        </div>
+        <div class="line-with-ok">
+          <hr class="line-left" />
+          <span>OR</span>
+          <hr class="line-right" />
+        </div>
+        <form id="loginForm">
+          <div class="input-container">
+            <img src="/assets/username.png" alt="Logo" id="username-icon" />
+            <div>
+              <label for="username" class="label">User name</label>
+              <input
+                type="text"
+                id="username"
+                placeholder="Username"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+          <div class="input-container">
+            <img src="/assets/mail.png" alt="Logo" id="email-icon" />
+            <div>
+              <label for="email" class="label">Email</label>
+              <input type="email" id="email" placeholder="Email" />
+            </div>
+          </div>
+          <div class="input-container">
+            <img src="/assets/key.png" alt="Logo" id="pass-icon" />
+            <div style="width: 90%;">
+              <label for="email" class="label">Email</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+          <div class="remember">
+            <div>
+              <input type="checkbox" id="rememberMe" name="rememberMe" />
+              <label for="rememberMe">Remember Me</label>
+            </div>
+            <div>
+              <a href="#" title="Forgot Password?" class="forgot-pass">Forgot Password?</a>
+            </div>
+          </div>
+          
+          <span class="error" id="errorMessage"></span>
+          <button type="submit">Login</button>
+        </form>
+        <div class="footer-links">
+          Don’t have an account? <a href="#">Register</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="/scripts/login.js"></script>
+  </body>
+</html>

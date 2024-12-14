@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <div class="home-container">
+      <h3 style="text-align: center">
+        Welcome to <br />
+        <span style="text-align: center">Unstop</span>
+      </h3>
+
+      <!-- User Details Section -->
+      <div class="user-details">
+        <img src="./assets/profile.png" alt="profile icon" id="profile-icon" />
+        <h4 id="user-fullname"></h4>
+        <p id="user-email"></p>
+        <p id="user-gender"></p>
+        <button id="logoutButton">Logout</button>
+      </div>
+    </div>
+
+    <script>
+      // Check if the user is logged in
+      const authToken = localStorage.getItem("authToken");
+      const userData = localStorage.getItem("userData");
+
+      if (!authToken || !userData) {
+        // Redirect to login if no auth token or user data
+        window.location.href = "/";
+      } else {
+        // Parse the user data from localStorage
+        const user = JSON.parse(userData);
+
+        // Populate the page with user details
+        // document.getElementById("profile-icon").src = user.image;
+        document.getElementById(
+          "user-fullname"
+        ).textContent = `${user.firstName} ${user.lastName}`;
+        document.getElementById("user-email").textContent = user.email;
+        document.getElementById("user-gender").textContent = user.gender;
+      }
+
+      // Logout functionality
+      document.getElementById("logoutButton").addEventListener("click", () => {
+        localStorage.removeItem("authToken");
+        localStorage.removeItem("userData");
+        window.location.href = "/";
+      });
+    </script>
+  </body>
+</html>
