@@ -298,11 +298,14 @@ button#logoutButton:hover {
 }
 
 .social-login .google:hover {
-  background-color: gray;
+  background-color:  #0056b3;
+  color:#fff
 }
 
 .social-login .facebook:hover {
-  background-color: gray;
+  background-color:  #0056b3;
+  color:#fff
+
 }
 
 form {
